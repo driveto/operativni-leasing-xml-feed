@@ -2,6 +2,7 @@
 <leasing xmlns="urn:x-driveto.cz:leasing:feed:v1">
 	<carOffers>
 		<carOffer>
+			<partnerCarOfferId>123456</partnerCarOfferId>
 			<car>
 				<drivetoUrl>
 					https://www.driveto.cz/bmw/x1/x1-2015/1-5-100-kw-benzinovy-predni-manualni/zakladni/

@@ -20,6 +20,7 @@
 
 	<xs:complexType name="carOfferType">
 		<xs:sequence>
+			<xs:element name="partnerCarOfferId" type="xs:string" minOccurs="0"/>
 			<xs:element name="car" type="carType"/>
 			<xs:element name="color" type="xs:string" minOccurs="0"/>
 			<xs:element name="targetLessee" type="targetLesseeType"/>

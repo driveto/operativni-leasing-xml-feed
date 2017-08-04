@@ -20,6 +20,7 @@ XML vypadá následovně (jednotlivé elementy jsou detailně popsány níže):
 <leasing xmlns="urn:x-driveto.cz:leasing:feed:v1">
     <carOffers>
         <carOffer>
+            <partnerCarOfferId>123456</partnerCarOfferId>
             <car>
                 <drivetoUrl>
                     https://www.driveto.cz/bmw/x1/x1-2015/1-5-100-kw-benzinovy-predni-manualni/zakladni/
@@ -99,6 +100,9 @@ Element, který zabaluje jednotlivé nabídky aut (jeho účelem je možnost roz
 
 ### `carOffer`:
 Nejdůležitější element, jde o nabídku na konkrétní automobil v konkrétní výbavě. Pokud konkrétní auto nabízíte na různá období na různé nájezdy, všechny budou v jedné `carOffer`.
+
+### `partnerCarOfferId` (volitelné):
+Vaše ID nabídky (pro snadnější komunikaci, případně aktualizaci nabídek) 
 
 ### `car`:
 Slouží pro identifikaci automobilu v databázi Driveto.cz. Aktuálně je to možné jen pomocí URL detailu automobilu v konkrétní výbavě - např. 
