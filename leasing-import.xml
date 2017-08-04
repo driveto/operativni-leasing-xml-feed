@@ -4,8 +4,21 @@
 		<carOffer>
 			<partnerCarOfferId>123456</partnerCarOfferId>
 			<car>
+				<carSpecification>
+					<make>Škoda</make>
+					<model>Rapid</model>
+					<modelLine>Rapid Spaceback</modelLine>
+					<modelLineYear>2017</modelLineYear>
+					<trim>Ambition Plus</trim>
+					<engineVolume>1.0</engineVolume>
+					<engineSuffix>TSI</engineSuffix>
+					<enginePowerKw>70</enginePowerKw>
+					<engineType>otto</engineType>
+					<is4x4>false</is4x4>
+					<isAutomaticTransmission>true</isAutomaticTransmission>
+				</carSpecification>
 				<drivetoUrl>
-					https://www.driveto.cz/bmw/x1/x1-2015/1-5-100-kw-benzinovy-predni-manualni/zakladni/
+					https://www.driveto.cz/skoda/rapid/rapid-spaceback-2017/1-0-tsi-70-kw-benzinovy-automaticka/ambition-plus/
 				</drivetoUrl>
 			</car>
 			<color>barva podle výrobce</color>

@@ -22,8 +22,21 @@ XML vypadá následovně (jednotlivé elementy jsou detailně popsány níže):
         <carOffer>
             <partnerCarOfferId>123456</partnerCarOfferId>
             <car>
+                <carSpecification>
+                    <make>Škoda</make>
+                    <model>Rapid</model>
+                    <modelLine>Rapid Spaceback</modelLine>
+                    <modelLineYear>2017</modelLineYear>
+                    <trim>Ambition Plus</trim>
+                    <engineVolume>1.0</engineVolume>
+                    <engineSuffix>TSI</engineSuffix>
+                    <enginePowerKw>70</enginePowerKw>
+                    <engineType>otto</engineType>
+                    <is4x4>false</is4x4>
+                    <isAutomaticTransmission>true</isAutomaticTransmission>
+                </carSpecification>
                 <drivetoUrl>
-                    https://www.driveto.cz/bmw/x1/x1-2015/1-5-100-kw-benzinovy-predni-manualni/zakladni/
+                    https://www.driveto.cz/skoda/rapid/rapid-spaceback-2017/1-0-tsi-70-kw-benzinovy-automaticka/ambition-plus/
                 </drivetoUrl>
             </car>
             <color>barva podle výrobce</color>
@@ -105,8 +118,22 @@ Nejdůležitější element, jde o nabídku na konkrétní automobil v konkrétn
 Vaše ID nabídky (pro snadnější komunikaci, případně aktualizaci nabídek) 
 
 ### `car`:
-Slouží pro identifikaci automobilu v databázi Driveto.cz. Aktuálně je to možné jen pomocí URL detailu automobilu v konkrétní výbavě - např. 
- `https://www.driveto.cz/bmw/x1/x1-2015/1-5-100-kw-benzinovy-predni-manualni/zakladni/` umístěné v elementu `drivetoUrl`.
+Slouží pro identifikaci automobilu v databázi Driveto.cz. 
+
+Je možné použít tag `carSpecification` se specifikací automobilu nebo tag `drivetoUrl` s URL detailu automobilu v konkrétní výbavě v katalogu Driveto.cz (případně oboje).
+ 
+#### `carSpecification`
+- `make` - značka auta (`Škoda`)
+- `model` - model auta (`Rapid`)
+- `modelLine` - modelová řada (`Rapid Spaceback`, někdy se může shodovat s modelem - např. Škoda Fabia bude jen `Fabia`)
+- `modelLineYear` - rok uvedení dané modelové řady (`2017`) - pro odlišení faceliftů
+- `trim` - výbava auta (`Ambition Plus`, případně `Základní`, pokud není uvedeno)
+- `engineVolume` - např. `1.0` nebo `3.6`
+- `engineSuffix` - např. `TDI` nebo `TSI`
+- `enginePowerKw` - výkon v kW
+- `engineType` - typ motoru - jedna z hodnot `diesel`, `electric`, `gas`, `hybrid`, `otto`, `wankel` (benzínový je `otto`)
+- `is4x4` (boolean): jde o 4×4?
+- `isAutomaticTransmission` (boolean): má automatickou převodovku 
 
 ### `color` (nepovinné):
 Barva automobilu podle definice výrobce.

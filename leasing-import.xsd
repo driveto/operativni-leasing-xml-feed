@@ -40,7 +40,8 @@
 	</xs:complexType>
 
 	<xs:complexType name="carType">
-		<xs:sequence>
+		<xs:choice minOccurs="1" maxOccurs="2">
+			<xs:element name="carSpecification" type="carSpecificationType"/>
 			<xs:element name="drivetoUrl">
 				<xs:simpleType>
 					<xs:restriction base="xs:anyURI">
@@ -48,6 +49,40 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="carSpecificationType">
+		<xs:sequence>
+			<xs:element name="make" type="xs:string"/>
+			<xs:element name="model" type="xs:string"/>
+			<xs:element name="modelLine" type="xs:string"/>
+			<xs:element name="modelLineYear">
+				<xs:simpleType>
+					<xs:restriction base="xs:positiveInteger">
+						<xs:minInclusive value="1900"/>
+						<xs:maxInclusive value="2200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="trim" type="xs:string"/>
+			<xs:element name="engineVolume" type="xs:float"/>
+			<xs:element name="engineSuffix" type="xs:string"/>
+			<xs:element name="enginePowerKw" type="xs:positiveInteger"/>
+			<xs:element name="engineType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="diesel"/>
+						<xs:enumeration value="electric"/>
+						<xs:enumeration value="gas"/>
+						<xs:enumeration value="hybrid"/>
+						<xs:enumeration value="otto"/>
+						<xs:enumeration value="wankel"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="is4x4" type="xs:boolean"/>
+			<xs:element name="isAutomaticTransmission" type="xs:boolean"/>
 		</xs:sequence>
 	</xs:complexType>
 
