@@ -135,6 +135,9 @@ Je možné použít tag `carSpecification` se specifikací automobilu nebo tag `
 - `is4x4` (boolean): jde o 4×4?
 - `isAutomaticTransmission` (boolean): má automatickou převodovku 
 
+#### `carName`
+Dále je možné využít element `carName`, do kterého je nutné vkládat oficiální název vozu podle výrobce.
+
 ### `color` (nepovinné):
 Barva automobilu podle definice výrobce.
 
