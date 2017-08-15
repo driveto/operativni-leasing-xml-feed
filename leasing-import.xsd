@@ -40,16 +40,16 @@
 	</xs:complexType>
 
 	<xs:complexType name="carType">
-		<xs:choice minOccurs="1" maxOccurs="2">
-			<xs:element name="carSpecification" type="carSpecificationType"/>
-			<xs:element name="drivetoUrl">
+		<xs:sequence>
+			<xs:element name="carSpecification" type="carSpecificationType" minOccurs="0"/>
+			<xs:element name="drivetoUrl" minOccurs="0">
 				<xs:simpleType>
 					<xs:restriction base="xs:anyURI">
 						<xs:pattern value="https://www\.driveto\.cz/.+"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-		</xs:choice>
+		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="carSpecificationType">
