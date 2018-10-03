@@ -184,12 +184,21 @@
 
 	<xs:complexType name="priceOfferType">
 		<xs:sequence>
-			<xs:element name="package" type="NonEmptyString"/>
+			<xs:element name="package" type="packageType"/>
 			<xs:element name="mileageYearly" type="mileageYearlyType"/>
 			<xs:element name="contractLength" type="contractLengthInMonthsType"/>
 			<xs:element name="price" type="priceType"/>
 			<xs:element name="downPayment" type="priceZeroableType"/>
 			<xs:element name="tradeIn" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="packageType">
+		<xs:sequence>
+			<xs:element name="name" type="NonEmptyString"/>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="service" type="serviceType"/>
+			</xs:sequence>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -233,6 +242,20 @@
 			<xs:enumeration value="silver"/>
 			<xs:enumeration value="white"/>
 			<xs:enumeration value="yellow"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="serviceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="third-party-liability-insurance"/>
+			<xs:enumeration value="radio-license-fees"/>
+			<xs:enumeration value="roadside-assistance"/>
+			<xs:enumeration value="road-tax"/>
+			<xs:enumeration value="road-vehicle-registration"/>
+			<xs:enumeration value="warranty-inspection-and-maintenance"/>
+			<xs:enumeration value="accident-insurance-deductible-10"/>
+			<xs:enumeration value="accident-insurance-deductible-5"/>
+			<xs:enumeration value="summer-winter-tires"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>

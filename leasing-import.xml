@@ -62,7 +62,12 @@
 			</listPrice>
 			<priceOffers>
 				<priceOffer>
-					<package>Platinový program</package>
+					<package>
+						<name>Platinový program</name>
+						<service>accident-insurance-deductible-10</service>
+						<service>radio-license-fees</service>
+						<service>road-tax</service>
+					</package>
 					<mileageYearly>20000</mileageYearly>
 					<contractLength>24</contractLength>
 					<price>
@@ -76,7 +81,12 @@
 					<tradeIn>false</tradeIn>
 				</priceOffer>
 				<priceOffer>
-					<package>Platinový program</package>
+					<package>
+						<name>Platinový program</name>
+						<service>accident-insurance-deductible-5</service>
+						<service>radio-license-fees</service>
+						<service>road-tax</service>
+					</package>
 					<mileageYearly>20000</mileageYearly>
 					<contractLength>36</contractLength>
 					<price>
@@ -144,7 +154,11 @@
 			</listPrice>
 			<priceOffers>
 				<priceOffer>
-					<package>Platinový program</package>
+					<package>
+						<name>Platinový program</name>
+						<service>accident-insurance-deductible-5</service>
+						<service>radio-license-fees</service>
+					</package>
 					<mileageYearly>20000</mileageYearly>
 					<contractLength>24</contractLength>
 					<price>
@@ -158,7 +172,11 @@
 					<tradeIn>true</tradeIn>
 				</priceOffer>
 				<priceOffer>
-					<package>Foo</package>
+					<package>
+						<name>Platinový program</name>
+						<service>accident-insurance-deductible-5</service>
+						<service>radio-license-fees</service>
+					</package>
 					<mileageYearly>10000</mileageYearly>
 					<contractLength>36</contractLength>
 					<price>
