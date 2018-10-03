@@ -9,6 +9,7 @@
 					<model>Rapid</model>
 					<modelLine>Rapid Spaceback</modelLine>
 					<modelLineYear>2017</modelLineYear>
+					<modelLineMonth>6</modelLineMonth>
 					<trim>Ambition Plus</trim>
 					<engineVolume>1.0</engineVolume>
 					<engineSuffix>TSI</engineSuffix>
@@ -22,7 +23,16 @@
 				</drivetoUrl>
 				<carName>Škoda Rapid Spaceback 1.0 TSI DSG Ambition Plus</carName>
 			</car>
-			<color>barva podle výrobce</color>
+			<colors>
+				<color>
+					<name>Bílá Perlová metalíza</name>
+					<basicColor>white</basicColor>
+				</color>
+				<color>
+					<name>Červená Corrida</name>
+					<basicColor>red</basicColor>
+				</color>
+			</colors>
 			<targetLessee>business</targetLessee>
 			<freeKm>5000</freeKm>
 			<url></url>
@@ -83,11 +93,28 @@
 		</carOffer>
 		<carOffer>
 			<car>
+				<carSpecification>
+					<make>Škoda</make>
+					<modelLine>Rapid Spaceback</modelLine>
+					<modelLineYear>2017</modelLineYear>
+					<modelLineMonth>6</modelLineMonth>
+					<trim>Ambition Plus</trim>
+					<engineVolume>1.0</engineVolume>
+					<enginePowerKw>70</enginePowerKw>
+					<engineType>otto</engineType>
+					<is4x4>false</is4x4>
+					<isAutomaticTransmission>true</isAutomaticTransmission>
+				</carSpecification>
 				<drivetoUrl>
 					https://www.driveto.cz/volkswagen/touareg/touareg-ii-2014/3-0-v6-tdi-bmt-150-kw-naftovy-4x4-trvaly-automaticka-robotizovana/4motion/
 				</drivetoUrl>
 			</car>
-			<color>barva podle výrobce</color>
+			<colors>
+				<color>
+					<name>Bílá Candy</name>
+					<basicColor>white</basicColor>
+				</color>
+			</colors>
 			<targetLessee>business</targetLessee>
 			<freeKm>5000</freeKm>
 			<url></url>
