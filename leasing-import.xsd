@@ -72,7 +72,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="modelLineMonth">
+			<xs:element name="modelLineMonth" minOccurs="0">
 				<xs:simpleType>
 					<xs:restriction base="xs:positiveInteger">
 						<xs:minInclusive value="1"/>
