@@ -34,7 +34,7 @@
 			</colors>
 			<targetLessee>business</targetLessee>
 			<freeKm>5000</freeKm>
-			<url></url>
+			<url>http://www.anyurlgiven.com/</url>
 			<trimInfo>
 				<security>
 					<item>Ukazatel tlaku v pneumatikách</item>
@@ -126,7 +126,6 @@
 			</colors>
 			<targetLessee>business</targetLessee>
 			<freeKm>5000</freeKm>
-			<url></url>
 			<trimInfo>
 				<security>
 					<item>One</item>
@@ -187,6 +186,73 @@
 						<vatRate>21</vatRate>
 					</downPayment>
 					<tradeIn>true</tradeIn>
+				</priceOffer>
+			</priceOffers>
+		</carOffer>
+		<carOffer>
+			<car>
+				<carSpecification>
+					<make>Škoda</make>
+					<modelLine>Fabia</modelLine>
+					<modelLineYear>2019</modelLineYear>
+					<trim>Style Plus</trim>
+					<engineVolume>1.0</engineVolume>
+					<enginePowerKw>81</enginePowerKw>
+					<engineType>otto</engineType>
+					<is4x4>false</is4x4>
+					<isAutomaticTransmission>false</isAutomaticTransmission>
+				</carSpecification>
+			</car>
+			<colors>
+				<option>metallic-color-on-order</option>
+			</colors>
+			<targetLessee>business</targetLessee>
+			<freeKm>5000</freeKm>
+			<trimInfo>
+				<optional>
+					<item>One extra feature</item>
+					<item>Second extra feature</item>
+				</optional>
+				<security>
+					<item>One</item>
+					<item>Two</item>
+					<item>Three</item>
+				</security>
+				<exterior>
+					<item>Foo</item>
+				</exterior>
+				<interior>
+					<item>Foo</item>
+				</interior>
+				<functionality>
+					<item>Foo</item>
+				</functionality>
+			</trimInfo>
+			<stockAvailability>
+				<status>on_order</status>
+			</stockAvailability>
+			<listPrice>
+				<withVat>1000</withVat>
+				<vatRate>21</vatRate>
+			</listPrice>
+			<priceOffers>
+				<priceOffer>
+					<package>
+						<name>Základní program</name>
+						<service>accident-insurance-deductible-10</service>
+						<service>radio-license-fees</service>
+					</package>
+					<mileageYearly>20000</mileageYearly>
+					<contractLength>24</contractLength>
+					<price>
+						<withVat>1400</withVat>
+						<vatRate>21</vatRate>
+					</price>
+					<downPayment>
+						<withoutVat>0</withoutVat>
+						<vatRate>21</vatRate>
+					</downPayment>
+					<tradeIn>false</tradeIn>
 				</priceOffer>
 			</priceOffers>
 		</carOffer>

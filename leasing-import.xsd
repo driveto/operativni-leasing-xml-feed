@@ -24,14 +24,24 @@
 			<xs:element name="car" type="carType"/>
 			<xs:element name="colors">
 				<xs:complexType>
-					<xs:sequence minOccurs="0" maxOccurs="unbounded">
-						<xs:element name="color" type="colorType"/>
-					</xs:sequence>
+					<xs:choice minOccurs="1" maxOccurs="1">
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="color" type="colorType"/>
+						</xs:sequence>
+						<xs:element name="option">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="metallic-color-on-order"/>
+									<xs:enumeration value="color-on-order"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:choice>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="targetLessee" type="targetLesseeType"/>
 			<xs:element name="freeKm" type="freeKmType" minOccurs="0"/>
-			<xs:element name="url" type="xs:anyURI"/>
+			<xs:element name="url" type="xs:anyURI" minOccurs="0"/>
 			<xs:element name="trimInfo" type="trimInfoType"/>
 			<xs:element name="stockAvailability" type="stockAvailabilityType"/>
 			<xs:element name="listPrice" type="priceType"/>
@@ -117,6 +127,7 @@
 
 	<xs:complexType name="trimInfoType">
 		<xs:sequence>
+			<xs:element name="optional" type="trimInfoSetType" minOccurs="0"/>
 			<xs:element name="security" type="trimInfoSetType" minOccurs="0"/>
 			<xs:element name="exterior" type="trimInfoSetType" minOccurs="0"/>
 			<xs:element name="interior" type="trimInfoSetType" minOccurs="0"/>
